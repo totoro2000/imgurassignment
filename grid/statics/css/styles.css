@@ -1,0 +1,84 @@
+/* i create this page without using grid :(*/
+body {
+    background-color: #2e3035;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 8, 72);
+    padding: 5px;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    padding: 5px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+
+}
+
+.photo {
+    width: 100%;
+    border-radius: 6px;
+}
+
+header {
+    background-image: linear-gradient(rgb(8, 8, 72), #2e3035);
+    background-size: cover;
+    text-align: center;
+    height: 50vh;
+    padding: 20px 8%;
+    color: aliceblue;
+    font-size: xxx-large;
+}
+
+.grid {
+    margin-top: 5%;
+    column-count: 4;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.grid.item {
+    width: 100%;
+    padding: 15px;
+    break-inside: avoid;
+}
+
+.item {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+@media (max-width:980px) {
+    .grid {
+        column-count: 3;
+    }
+}
+
+@media (max-width:780px) {
+    .grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width:575px) {
+    .grid {
+        column-count: 1;
+    }
+}
